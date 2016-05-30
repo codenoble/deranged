@@ -6,6 +6,7 @@ module Deranged
 
     # TODO: support multiple and custom formats
     def to_s
+      return '' if range.nil?
       [range.min, range.max].uniq.join('-')
     end
 
